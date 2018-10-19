@@ -1,0 +1,53 @@
+@charset "UTF-8";
+/*
+    这是首页的样式
+ */
+.nav {
+  width: 1000px;
+  height: 160px;
+  padding: 5px 20px 10px 15px;
+  line-height: 40px;
+  background-color: orange;
+  color: #fff;
+}
+
+.nav ul {
+  width: 2400px;
+  padding-top: 20px;
+  padding-bottom: 2em;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+
+.nav li {
+  float: left;
+  padding: 5px 15px;
+  padding-top: 10px;
+  position: relative;
+  color: #666;
+}
+
+.nav li a {
+  display: inline-block;
+  color: #fff;
+}
+
+.nav li a.home {
+  background-color: orange;
+}
+
+.nav li ul {
+  position: absolute;
+  padding: 5px 20px;
+  color: #ccc;
+}
+
+.nav li ul a:hover {
+  color: #5b8c58;
+}
+
+.nav li:last-child {
+  float: right;
+}

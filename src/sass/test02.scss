@@ -1,0 +1,42 @@
+@import 'var';
+$fontSize : 16px;
+$headColor : #58bc58;
+$grid : 20;
+
+// % 无实际意义的占位符。变量前有$。关键字前加@
+%center{
+    margin:0 auto;
+    text-align:center;
+}
+
+
+
+@for $i from 1 through 3{ 
+    h#{$i}{      
+        font-size: $fontSize * (4 - $i);
+        // background-color : $headColor / $i * 0.8;
+        background-color : darken($headColor,$i*10);
+        @extend %center;
+    }
+}
+
+
+@for $i from 1 through $grid{
+    .col-xs-#{$i}{
+        width : percentage($i / $grid);
+    }
+} 
+
+h4{
+    @extend h3;
+    background-color: $mainColor;
+}
+
+p{
+    @extend %center;
+    color:green;
+    font-size:100px;
+}
+
+
+
