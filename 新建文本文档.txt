@@ -1,5 +1,2 @@
-$ git add .
-
-$ git commit -m "aa"
-
-$ git push origin master
+上传文件到git网站前要记得先吧改变过的文件提交暂存区,再提交版本库,才可以push到网站
+从网站拉取文件到本地:先拉取,在合并.
